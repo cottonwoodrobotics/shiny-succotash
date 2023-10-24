@@ -29,7 +29,7 @@ public class DriveTrainCommand extends CommandBase {
     public void execute() {
         double ySpeed = m_controller.getLeftY() * driveSpeedMultiplier;
         double xSpeed = -m_controller.getLeftX() * driveSpeedMultiplier;
-        double zRotation = m_controller.getRawAxis(2) * driveSpeedMultiplier;
+        double zRotation = m_controller.getRawAxis(2) * -driveSpeedMultiplier;
     //ET changes y or x speed based based on left or right analog inputs
 
     // :D this appears to be broken, so I'm commenting this out for now while I test other things.    
